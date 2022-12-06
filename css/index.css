@@ -1,73 +1,98 @@
 @charset "utf-8";
 
-*{padding:0; margin:0; box-sizing: border-box; list-style:none;}
+*{padding:0; margin:0; box-sizing: border-box; list-style:none;
+font-family:'Fredoka One', cursive;}
 a{text-decoration:none; color:#222;}
 button{background:none; border:none; cursor:pointer;}
 .radius_btn{width:130px; height:40px; border-radius: 20px;
-    background: #FFCAD6; color:white; font-size:15px;}
-h3{font-size:60px; }
+    background:rgb(245, 86, 131); color:white; font-size:15px;}
+h3{font-size:50px; letter-spacing:3px; }
 
 
-#wrap{width:100%; margin:100px auto 0 auto;}
-header{width:100%; height:100px; background:rgb(240, 5, 71,0.5);
-     position:fixed; z-index:100; top:0;}
-header button{width:50px; height:50px; margin: 25px; float:left; background:gold;}
-header h1{float:left; margin-left:35%; line-height:100px;}
-header nav{width:600px; height:100%; border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    position:fixed; left:-320px; top:0; z-index:90;
-    display:none;}
-header nav ul{position:absolute; left:380px; top:30%; }
-header nav li, header nav li a {color:white; font-size:22px; line-height:30px; margin-top:20px; }
-header nav li a:hover{color:pink; border-bottom:3px solid pink;}   
 
-#slider{width:100%; height:750px; overflow: hidden; margin: 0 auto;
+header{width:100%; height:65px; background:rgb(245, 86, 131);
+     position:fixed; z-index:100; top:0; text-align:center;}
+header button{width:35px; height:30px; left:30px; top:18px; z-index:99;
+position:absolute; display:flex; flex-direction: column; justify-content: space-between;}
+header button p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
+header h1{ height:100px; margin:0 auto;}
+header h1 img{height:100px; margin:15px 0; }
+header .nav_box{width:100%; height:100%; background:rgba(0, 0, 0, 0.3);
+position: fixed; left:0; top:0; display:none;}
+header nav{width:630px; height:110%; border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position:fixed; left:-300px; top:-5%; z-index:90;
+    }
+header nav ul{position:absolute; left:400px; top:30%; }
+header nav li, header nav li a { font-size:22px; line-height:30px; text-align:left;margin-top:20px;
+    color:white; text-shadow: 0 1px 3px rgb(68, 68, 68); }
+header nav li a:hover{color:rgb(245, 86, 131); border-bottom:3px solid rgb(245, 86, 131);} 
+
+#wrap{width:100%; margin:65px auto 0 auto;}
+
+/* slider*/
+#slider{width:100%; height:850px; overflow: hidden; margin: 0 auto;
     position: relative; z-index:80;
-    background:#fffafe;}
+    background:#fffafd;}
+/* slider inner=둥근배경*/
 .slider_inner{width:2600px; height:130%; border-radius: 100%;
     position: absolute; left:50%; margin-left:-1300px; top:-280px;
-    background:pink;
+    background:#fdecf6; background-size:30%; box-shadow: 0px 3px 8px gray;
     text-align:center;}
-
+/* slider inner 안에 inner */
 .slider_ininner{width:1000px; height:600px; margin:0 auto; position:relative;
-    left:0; top:280px; border:1px solid red;}
-.slider_ininner h2{font-size:50px; line-height:60px; padding:10px 0;}
-.slider_ininner img{display: block;}
-.slider_ininner img:nth-of-type(1){width:500px; height:400px; margin:20px auto; background:gold;}
-.slider_ininner img:not(:nth-of-type(1)){width:200px; height:300px; background:tomato;
-position:absolute;top:0%;}
-.slider_ininner img:nth-of-type(2){margin:180px 0 0 100px; transform: rotate(-20deg);}
-.slider_ininner img:nth-of-type(3){margin:260px 0 0 700px; transform: rotate(20deg);}
+    left:0; top:330px;}
+.slider_ininner img{display: block; }
+.slider_ininner img:nth-of-type(1){width:90%; height:auto; margin:90px auto 0 auto; 
+    border-radius:100%;background:gold;}
+.slider_ininner img:not(:nth-of-type(1)){width:150px; height:auto;
+position:absolute; top:0%; border-radius:100%;}
+.slider_ininner img:nth-of-type(2){margin:10px 0 0 40px; transform: rotate(-15deg);}
+.slider_ininner img:nth-of-type(3){margin:350px 0 0 300px; transform: rotate(-10deg);}
+.slider_ininner img:nth-of-type(4){margin:200px 0 0 850px; transform: rotate(15deg);}
 
 
+
+/* section1 */
 #section1{width:100%; height:800px; background:#fffafe; position:relative; }
 #section1 .middle{width:1000px; height:700px; margin: 0 auto;  background:#fffafe;
-    display:flex; justify-content:space-around ; align-items: center;  position:relative; z-index:70;}
+    display:flex; justify-content:space-around ; align-items: center;
+    position:relative; z-index:70;}
+#section1 h3{color:#ffe200;}    
 #section1 p{font-size:14px;padding:40px 0;}  
-#section1 .middle .img_box{width:420px; height:550px; background:gold;
-    border-top-left-radius:210px; border-top-right-radius:210px;}
-#section1 .middle img{width:300px; height:400px; background:tomato;
-    position:relative; margin:180px 0 0 60px}
+#section1 .middle .img_box{width:400px; height:500px;
+    border-top-left-radius:210px; border-top-right-radius:210px;
+    background-image:url(../img/chew.jpg);
+    background-size:110%; background-position: center;}
+#section1 .middle img{width:380px; height:auto; 
+    position:relative; margin:390px 0 0 10px; transform: rotate(20deg);}
 #section1 .befor_after{width:100%;  top:40%; transform:translateY(-40%); position: absolute;
     display: flex; justify-content: space-between;  z-index:69;}    
-#section1 .befor,#section1 .after{width:300px; height:400px; background:tomato;   }
-.section1_btn{width:100%; text-align:center;margin-top:30px;}
-.section1_btn button{width:35px; height:35px; border-radius: 100%; padding:12.5px;}
-.section1_btn button:nth-of-type(2){margin:0 10px;}
-.section1_btn button:first-of-type{border:1px solid pink; }
-.section1_btn div{width:8px; height:8px; 
-    background:lightgray; transform: rotate(45deg); }
-.section1_btn button:first-of-type div{background:pink;}
+#section1 .befor,#section1 .after{width:300px; height:400px; }
+#section1 .befor img, #section1 .after img{width:100%; height: auto; }
+/* section1 버튼↓ */
+.section1_btn{width:200px; height:50px; margin:0 auto; text-align:center; margin-top:30px;
+display:flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.section1_btn button{width:25px; height:25px; border-radius: 100%;
+    background:lightgray;}
+.section1_btn button:first-of-type{width:30px; height:30px;  background: rgb(245, 86, 131); }
 
 
-#section2{width:100%; height:700px;  background:linear-gradient( to bottom, #fffafe, #f4e2d2)}
-.section2_inner{width:1000px; height:700px; margin:0 auto; position:relative;
+
+/* section2 */
+#section2{width:100%; height:800px;  background:linear-gradient( to bottom, #fffafe, #f4e2d2)}
+#section2 h3{color:#ffe200;} 
+.section2_inner{width:1000px; height:800px; margin:0 auto; position:relative;
     display:flex; flex-wrap: wrap;}
-.section2_inner div{position:absolute; top: 15%;}    
-.section2_inner img{width:420px; height:570px; margin:70px auto 0 auto; background:gold;
-    border-top-left-radius:210px; border-top-right-radius:210px;}    
-.section2_inner p{position:absolute; right:0; top: 80%; font-size:14px;}
-
+.section2_inner .text{position:absolute; top: 15%;}    
+.section2_inner .img_box{width:420px; height:570px; overflow: hidden; margin:110px auto 0 auto; background:#92ff96;
+    border-top-left-radius:210px; border-top-right-radius:210px;}  
+.section2_inner .img_box img{height:100%; margin: 0 0 0 -80%;}
+.section2_inner>img{width:150px; height:150px; transform: rotate(20deg); 
+    position:absolute; right:5%; top:30%; }
+.section2_inner p{position:absolute; right:0; top: 75%; font-size:15px; line-height:20px;  width:360px;
+font-family:"맑은 고딕"; background: rgba(255, 255, 255,0.8); padding:10px;}
+.section2_inner button{margin-top:50px;}
 
 
 .banner{width:100%; height:50px; line-height:50px; display:flex; justify-content:space-evenly;}
