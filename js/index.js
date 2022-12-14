@@ -53,10 +53,6 @@ $(document).ready(function(){
 
 
 
-    // $('.banner_inner').css({marginLeft:'-100%', transition:'5s'},function(){
-        
-    // });
+
 });
 
-
-// $('.banner_inner p').eq(0).append('.banner_inner');
