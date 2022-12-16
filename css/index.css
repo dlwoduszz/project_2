@@ -143,54 +143,42 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     .section2_inner button{margin-top:30px;}
     
     /* banner*/
+    #banner{width:100%; margin:0 auto; height:50px; line-height:50px;
+        display: flex; flex-wrap:nowrap; overflow: hidden;
+        
+    }
+    .banner_inner{width:auto; height:50px; 
+        position:relative; float:left;
+        display: flex; flex-wrap:nowrap;
+        animation:banner_move 15s linear infinite
+    }
     
-    
-    #banner p{width:100px; text-align:center; height:50px; float:left;}
-    
+
+    #banner p{width:150px; text-align:center; height:50px; float:left;}
     #banner p:nth-of-type(odd){color:#ffa6b9;}
     #banner p:nth-of-type(even){color:#ffcad6;}
-    #banner p:first-of-type{color:red;}
     
-    
-    
-     #banner{width:100%; height:50px; line-height:50px;
-        overflow:hidden;
-     }
-    .banner_inner{width:100%;  height:50px; 
-            position:relative; 
-            display: flex; flex-wrap:wrap; 
-            animation:banner_move 15s linear infinite;
+
+    @keyframes banner_move{
+    0%{
+        left:0;
     }
-        .banner_inner p{width:100px; text-align:center; height:50px;}
-        #banner p:nth-of-type(odd){color:#ffa6b9;}
-        #banner p:nth-of-type(even){color:#ffcad6;}
-        
-        @keyframes banner_move{
-            0%{
-                left:0;
-            }
-            50%{
-                left:-100%;
-            }
-            50.01%{
-                left:100%;
-            }
-            100%{
-                left:0;
-            }
-        }
+    100%{
+        left:-2100px;
+    }
+    }
      
     
     
     
     
     /* section3 */
-    #section3{width:100%; height:1100px; margin:0 auto; background:linear-gradient( to top, #ffe9ee, #ffffff);}
+    #section3{width:100%; height:auto; margin:0 auto; background:linear-gradient( to top, #ffe9ee, #ffffff);}
     #section3 h3{text-align:center;}
     #section3>div{width:90%; margin:0 auto; height:auto; padding:10% 5%;  cursor:pointer;}
     #section3>div>.img_box{display:none;}
     #section3 .box div{width:240px; margin:0 auto; text-align:center; margin-top:30px;}
-    #section3 .box img{width:240px; height:auto;}
+    #section3 .box img{width:80%; height:auto;}
     #section3 .box img:hover{transform: rotate(10deg); transition: 0.5s;}
     #section3 .box h4{padding:5px 0; letter-spacing: 1px;}
     #section3 .box p{padding-bottom:5px; font-size:12px;}
@@ -371,43 +359,31 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     .section2_inner button{margin-top:50px;}
     
     /* banner*/
+    #banner{width:100%; margin:0 auto; height:50px; line-height:50px;
+        display: flex; flex-wrap:nowrap; overflow: hidden;
+        
+    }
+    .banner_inner{width:auto; height:50px; 
+        position:relative; float:left;
+        display: flex; flex-wrap:nowrap;
+        animation:banner_move 15s linear infinite
+    }
     
-    
-    #banner p{width:100px; text-align:center; height:50px; float:left;}
-    
+
+    #banner p{width:150px; text-align:center; height:50px; float:left;}
     #banner p:nth-of-type(odd){color:#ffa6b9;}
     #banner p:nth-of-type(even){color:#ffcad6;}
-    #banner p:first-of-type{color:red;}
     
-    
-    
-     #banner{width:100%; height:50px; line-height:50px;
-        overflow:hidden;
-     }
-    .banner_inner{width:100%;  height:50px; 
-            position:relative; 
-            display: flex; flex-wrap:wrap; 
-            animation:banner_move 15s linear infinite;
+
+    @keyframes banner_move{
+    0%{
+        left:0;
     }
-        .banner_inner p{width:100px; text-align:center; height:50px;}
-        #banner p:nth-of-type(odd){color:#ffa6b9;}
-        #banner p:nth-of-type(even){color:#ffcad6;}
-        
-        @keyframes banner_move{
-            0%{
-                left:0;
-            }
-            50%{
-                left:-100%;
-            }
-            50.01%{
-                left:100%;
-            }
-            100%{
-                left:0;
-            }
-        }
-     
+    100%{
+        left:-2100px;
+    }
+    }
+      
     
     
     
@@ -620,42 +596,30 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         }
         
         /* banner*/
+        #banner{width:100%; margin:0 auto; height:50px; line-height:50px;
+            display: flex; flex-wrap:nowrap; overflow: hidden;
+            
+        }
+        .banner_inner{width:auto; height:50px; 
+            position:relative; float:left;
+            display: flex; flex-wrap:nowrap;
+            animation:banner_move 15s linear infinite
+        }
         
-        
-        #banner p{width:100px; text-align:center; height:50px; float:left;}
-        
+
+        #banner p{width:150px; text-align:center; height:50px; float:left;}
         #banner p:nth-of-type(odd){color:#ffa6b9;}
         #banner p:nth-of-type(even){color:#ffcad6;}
-        #banner p:first-of-type{color:red;}
         
-        
-        
-         #banner{width:100%; height:50px; line-height:50px;
-            overflow:hidden;
-         }
-        .banner_inner{width:100%;  height:50px; 
-                position:relative; 
-                display: flex; flex-wrap:wrap; 
-                animation:banner_move 15s linear infinite;
+
+        @keyframes banner_move{
+        0%{
+            left:0;
         }
-            .banner_inner p{width:100px; text-align:center; height:50px;}
-            #banner p:nth-of-type(odd){color:#ffa6b9;}
-            #banner p:nth-of-type(even){color:#ffcad6;}
-            
-            @keyframes banner_move{
-                0%{
-                    left:0;
-                }
-                50%{
-                    left:-100%;
-                }
-                50.01%{
-                    left:100%;
-                }
-                100%{
-                    left:0;
-                }
-            }
+        100%{
+            left:-2100px;
+        }
+}
          
         
         
@@ -873,42 +837,30 @@ display:flex; justify-content: space-between; align-items: center; flex-wrap: wr
 
 
 /* banner*/
-#banner{ width:100%; height:50px; line-height:50px;}
-.banner_inner{width:200%; height:50px;}
-#banner p{width:100px; text-align:center; height:50px; float:left;}
+ #banner{width:100%; margin:0 auto; height:50px; line-height:50px;
+     display: flex; flex-wrap:nowrap; overflow: hidden;
+     
+ }
+.banner_inner{width:auto; height:50px; 
+        position:relative; float:left;
+        display: flex; flex-wrap:nowrap;
+        animation:banner_move 15s linear infinite
+}
+  
 
+#banner p{width:150px; text-align:center; height:50px; float:left;}
 #banner p:nth-of-type(odd){color:#ffa6b9;}
 #banner p:nth-of-type(even){color:#ffcad6;}
-#banner p:first-of-type{color:red;}
+   
 
-
-
- #banner{width:100%; height:50px; line-height:50px;
-    overflow:hidden;
- }
-.banner_inner{width:100%;  height:50px; 
-        position:relative; 
-        display: flex; flex-wrap:wrap; 
-        animation:banner_move 15s linear infinite;
-}
-    .banner_inner p{width:100px; text-align:center; height:50px;}
-    #banner p:nth-of-type(odd){color:#ffa6b9;}
-    #banner p:nth-of-type(even){color:#ffcad6;}
-    
-    @keyframes banner_move{
-        0%{
-            left:0;
-        }
-        50%{
-            left:-100%;
-        }
-        50.01%{
-            left:100%;
-        }
-        100%{
-            left:0;
-        }
+@keyframes banner_move{
+    0%{
+        left:0;
     }
+    100%{
+        left:-2100px;
+    }
+}
  
 
 

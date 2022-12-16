@@ -46,13 +46,5 @@ $(document).ready(function(){
         $(this).animate({rotate:'360deg'},1500)
     });
 
-
-   
-
-
-
-
-
-
 });
 
