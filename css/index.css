@@ -32,7 +32,8 @@ button{background:none; border:none; cursor:pointer;}
     background:rgb(245, 86, 131); color:white; font-size:15px;}
 .radius_btn:hover{box-shadow:0 0 3px rgb(146, 146, 146);} 
 h1{cursor: pointer;}
-h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
+h1 img:hover {transform: rotate(360deg); }
+h1 img{transition: 1.5s;}
 
 @media(max-width:500px){
 
@@ -42,9 +43,11 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
 
     header{width:100%; height:65px; background:rgb(245, 86, 131);
          position:fixed; z-index:100; top:0; text-align:center;}
-    header button{width:35px; height:30px; left:30px; top:18px; z-index:99;
+    header .menu_btn{width:35px; height:30px; left:30px; top:18px; z-index:99;
     position:absolute; display:flex; flex-direction: column; justify-content: space-between;}
-    header button p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
+    header .menu_btn p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
+    header .login_btn {width:35px; height:30px; right:30px; top:18px; z-index:99;
+        position:absolute;}
     header h1{ height:100px; margin:0 auto;}
     header h1 img{height:100px; margin:15px 0; }
     
@@ -53,16 +56,16 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     header .nav_box{width:100%; height:100%; background:none; display:none;
     position: fixed; left:0; top:0;  background-color:rgba(0, 0, 0, 0.3)}
     header nav{width:630px; height:110%; border-radius: 100%;
-        background-color: rgba(255, 255, 255, 0.3); 
+        background-color:rgb(245, 86, 131); 
         position:fixed; left:-630px; top:-5%; z-index:90;
         }
     
     
     
-    header nav ul{position:absolute; left:400px; top:30%; }
+    header nav ul{position:absolute; left:350px; top:30%; }
     header nav li, header nav li a { font-size:22px; line-height:30px; text-align:left;margin-top:20px;
-        color:white; text-shadow: 0 1px 3px rgb(110, 110, 110); }
-    header nav li a:hover{color:rgb(245, 86, 131); border-bottom:3px solid rgb(245, 86, 131);
+        color:white;  }
+    header nav li a:hover{color:#fff200; 
         text-shadow:none;} 
     
     #wrap{width:100%; margin:65px auto 0 auto;}
@@ -134,8 +137,8 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     .section2_inner .img_box{width:320px; height:470px; overflow: hidden;  background:#92ff96;
         border-top-left-radius:210px; border-top-right-radius:210px;
         cursor: pointer; position: absolute; right:5%; margin-top:-30%;}  
-        .section2_inner .img_box:hover img{transform: scale(1.2); transition: 0.5s;}
-    .section2_inner .img_box img{height:100%; margin: 0 0 0 -80%;}
+        .section2_inner .img_box:hover img{transform: scale(1.2); }
+    .section2_inner .img_box img{height:100%; margin: 0 0 0 -80%;transition: 0.5s;}
     .section2_inner>img{display:none;}
     .section2_inner p{position:absolute; top:55%; font-size:15px; line-height:20px;
         width:90%;
@@ -178,8 +181,8 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     #section3>div{width:90%; margin:0 auto; height:auto; padding:10% 5%;  cursor:pointer;}
     #section3>div>.img_box{display:none;}
     #section3 .box div{width:240px; margin:0 auto; text-align:center; margin-top:30px;}
-    #section3 .box img{width:80%; height:auto;}
-    #section3 .box img:hover{transform: rotate(10deg); transition: 0.5s;}
+    #section3 .box img{width:80%; height:auto;transition: 0.5s;}
+    #section3 .box img:hover{transform: rotate(10deg); }
     #section3 .box h4{padding:5px 0; letter-spacing: 1px;}
     #section3 .box p{padding-bottom:5px; font-size:12px;}
     #section3 .box span{width:40px; margin:0 auto; line-height:20px; display:block;
@@ -202,9 +205,9 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         display:flex; flex-wrap: wrap; justify-content:space-around; align-content: space-around; }
     #section6 .section6_inner div{width:35%; text-align:center;}
     .section6_inner img{width:70%; margin:0 auto; height:auto;
-    border-radius: 100%; box-shadow: 1px 1px 3px black;}
+    border-radius: 100%; box-shadow: 1px 1px 3px black;  transition: 0.5s;}
     .section6_inner img:hover{
-        transform: rotate(360deg) scale(1.2); box-shadow:none;  transition: 0.5s;}
+        transform: rotate(360deg) scale(1.2); box-shadow:none; }
     
     
     
@@ -250,10 +253,12 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     
     header{width:100%; height:65px; background:rgb(245, 86, 131);
          position:fixed; z-index:100; top:0; text-align:center;}
-    header button{width:35px; height:30px; left:30px; top:18px; z-index:99;
+    header .menu_btn{width:35px; height:30px; left:30px; top:18px; z-index:99;
     position:absolute; display:flex; flex-direction: column; justify-content: space-between;}
-    header button p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
+    header .menu_btn p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
     header h1{ height:100px; margin:0 auto;}
+    header .login_btn {width:35px; height:30px; right:30px; top:18px; z-index:99;
+        position:absolute;}
     header h1 img{height:100px; margin:15px 0; }
     
     
@@ -261,18 +266,18 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     header .nav_box{width:100%; height:100%; background:none; display:none;
     position: fixed; left:0; top:0;  background-color:rgba(0, 0, 0, 0.3)}
     header nav{width:630px; height:110%; border-radius: 100%;
-        background-color: rgba(255, 255, 255, 0.3); 
+        background-color:rgb(245, 86, 131) ;
         position:fixed; left:-630px; top:-5%; z-index:90;
         }
     
     
     
-    header nav ul{position:absolute; left:400px; top:30%; }
+    header nav ul{position:absolute; left:350px; top:30%; }
     header nav li, header nav li a { font-size:22px; line-height:30px; text-align:left;margin-top:20px;
-        color:white; text-shadow: 0 1px 3px rgb(110, 110, 110); }
-    header nav li a:hover{color:rgb(245, 86, 131); border-bottom:3px solid rgb(245, 86, 131);
+        color:white;  }
+    header nav li a:hover{color:#fff200; 
         text-shadow:none;} 
-    
+        
     #wrap{width:100%; margin:65px auto 0 auto;}
     
     /* slider*/
@@ -282,7 +287,7 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     
     .slider_ininner{width:100%; height:200px; margin:0 auto;
         background:#6242c8; }
-    .slider_ininner img:nth-of-type(1){width:120%;  margin:50px 0 0 -10%;; 
+    .slider_ininner img:nth-of-type(1){width:120%;  margin:30px 0 0 -10%;; 
         border-radius:100%; box-shadow: 0px 8px 8px gray;
         position:relative;}
     .slider_ininner img:not(:nth-of-type(1)){width:130px; height:auto;
@@ -306,7 +311,7 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
 
 
     /* section1 */
-        #section1{width:100%; height:auto; padding:50px 0; background:#fffafe; position:relative; overflow:hidden;}
+        #section1{width:100%; height:auto; padding:50px 0; background:#fffafe; position:relative; }
         #section1 .middle{width:100%;  height:auto; margin: 0 auto;  background:#fffafe;
             display:flex; justify-content:center; flex-wrap: wrap;
             align-items: center; flex-direction: column;
@@ -347,12 +352,12 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     #section2 h3{color:#ffe200;} 
     .section2_inner{width:90%; height:800px; margin:0 auto; position:relative;
         display:flex; flex-wrap: wrap;}
-    .section2_inner .text{position:absolute; top: 15%;}    
+    .section2_inner .text{position:absolute; top: 15%; z-index:90;}    
     .section2_inner .img_box{width:420px; height:570px; overflow: hidden; margin:110px auto 0 auto; background:#92ff96;
         border-top-left-radius:210px; border-top-right-radius:210px;
         cursor: pointer;}  
-        .section2_inner .img_box:hover img{transform: scale(1.2); transition: 0.5s;}
-    .section2_inner .img_box img{height:100%; margin: 0 0 0 -80%;}
+        .section2_inner .img_box:hover img{transform: scale(1.2); }
+    .section2_inner .img_box img{height:100%; margin: 0 0 0 -80%; transition: 0.5s;}
     .section2_inner>img{display:none; }
     .section2_inner p{position:absolute; right:0; top: 75%; font-size:15px; line-height:20px;  width:360px;
      background: rgba(255, 255, 255,0.8); padding:10px;}
@@ -398,8 +403,8 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         display:flex; flex-wrap:wrap; justify-content: center; align-content: space-around;}
     #section3 .box div{width:200px; height: 350px; margin:0 3%;  overflow: hidden;
  }
-    #section3 .box img{width:70%; height:auto;}
-    #section3 .box img:hover{transform: rotate(10deg); transition: 0.5s;}
+    #section3 .box img{width:70%; height:auto; transition: 0.5s;}
+    #section3 .box img:hover{transform: rotate(10deg); }
     #section3 .box h4{padding:10px 0; letter-spacing: 1px;}
     #section3 .box p{width:200px;padding-bottom:10px; font-size:12px;}
     #section3 .box span{width:40px; margin:0 auto; line-height:20px; display:block;
@@ -418,8 +423,9 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
     .section4_inner>div{cursor:pointer; width:200px; margin:10px 3%; }
     .section4_inner .img_box{width:200px; height: 300px; overflow: hidden; }
     .section4_inner .img_box:hover{box-shadow:0 1px 10px #e7b7c2; 
-        border-top-left-radius:100px; border-top-right-radius:100px; transition: 0.5s;}
-    .section4_inner .img_box:hover img{transform: scale(1.17); transition: 0.5s;}
+        border-top-left-radius:100px; border-top-right-radius:100px;}
+    .section4_inner .img_box:hover img{transform: scale(1.17); }
+    .section4_inner .img_box img{transition: 0.5s;}
     .section4_inner>div:nth-of-type(1) img{width:130%; margin:40px 0 0 -17%;}
     .section4_inner>div:nth-of-type(2) img{width:120%; margin:70px 0 0 -11%;}
     .section4_inner>div:nth-of-type(3) img{width:115%; margin:60px 0 0 -7.5%;}
@@ -447,9 +453,9 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         display:flex; flex-wrap: wrap; justify-content:space-around; align-items: center;}
     #section6 .section6_inner div{margin:0 10px;}
     .section6_inner img{width:150px; height:150px;
-    border-radius: 100%; box-shadow: 1px 1px 3px black;}
+    border-radius: 100%; box-shadow: 1px 1px 3px black; transition: 0.5s;}
     .section6_inner img:hover{
-        transform: rotate(360deg) scale(1.2); box-shadow:none;  transition: 0.5s;}
+        transform: rotate(360deg) scale(1.2); box-shadow:none; }
     
     
     
@@ -484,28 +490,30 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         
         header{width:100%; height:65px; background:rgb(245, 86, 131);
              position:fixed; z-index:100; top:0; text-align:center;}
-        header button{width:35px; height:30px; left:30px; top:18px; z-index:99;
+        header .menu_btn{width:35px; height:30px; left:30px; top:18px; z-index:99;
         position:absolute; display:flex; flex-direction: column; justify-content: space-between;}
-        header button p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
+        header .menu_btn p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
+        header .login_btn {width:35px; height:30px; right:30px; top:18px; z-index:99;
+            position:absolute;}
         header h1{ height:100px; margin:0 auto;}
         header h1 img{height:100px; margin:15px 0; }
         
         
         
         header .nav_box{width:100%; height:100%; background:none; display:none;
-        position: fixed; left:0; top:0;  background-color:rgba(0, 0, 0, 0.3)}
-        header nav{width:630px; height:110%; border-radius: 100%;
-            background-color: rgba(255, 255, 255, 0.3); 
-            position:fixed; left:-630px; top:-5%; z-index:90;
-            }
-        
-        
-        
-        header nav ul{position:absolute; left:400px; top:30%; }
-        header nav li, header nav li a { font-size:22px; line-height:30px; text-align:left;margin-top:20px;
-            color:white; text-shadow: 0 1px 3px rgb(110, 110, 110); }
-        header nav li a:hover{color:rgb(245, 86, 131); border-bottom:3px solid rgb(245, 86, 131);
-            text-shadow:none;} 
+            position: fixed; left:0; top:0;  background-color:rgba(0, 0, 0, 0.3)}
+            header nav{width:630px; height:110%; border-radius: 100%;
+                background-color:rgb(245, 86, 131) ;
+                position:fixed; left:-630px; top:-5%; z-index:90;
+                }
+            
+            
+            
+            header nav ul{position:absolute; left:350px; top:30%; }
+            header nav li, header nav li a { font-size:22px; line-height:30px; text-align:left;margin-top:20px;
+                color:white;  }
+            header nav li a:hover{color:#fff200; 
+                text-shadow:none;} 
         
         #wrap{width:100%; margin:65px auto 0 auto;}
         
@@ -575,12 +583,12 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         #section2 h3{color:#ffe200;} 
         .section2_inner{width:1000px; height:800px; margin:0 auto; position:relative;
             display:flex; flex-wrap: wrap;}
-        .section2_inner .text{position:absolute; top: 15%;}    
+        .section2_inner .text{position:absolute; top: 15%; z-index:90}    
         .section2_inner .img_box{width:420px; height:570px; overflow: hidden; margin:110px auto 0 auto; background:#92ff96;
             border-top-left-radius:210px; border-top-right-radius:210px;
             cursor: pointer;}  
-        .section2_inner .img_box:hover img{transform: scale(1.2); transition: 0.5s;}
-        .section2_inner .img_box img{height:100%; margin: 0 0 0 -80%;}
+        .section2_inner .img_box:hover img{transform: scale(1.2);}
+        .section2_inner .img_box img{height:100%; margin: 0 0 0 -80%; transition: 0.5s;}
         .section2_inner>img{width:150px; height:150px;  
             position:absolute; right:5%; top:30%;
         
@@ -633,14 +641,14 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         #section3>div>.img_box{width:400px; height:550px; overflow: hidden;
             float:left; 
             border-top-left-radius:260px; border-top-right-radius:260px;}
-        #section3>div>.img_box:hover img{transform: scale(1.1); transition: 0.5s;}
-        #section3>div>.img_box img{width:190%; margin:-110px 0 0 -220px; }
+        #section3>div>.img_box:hover img{transform: scale(1.1); }
+        #section3>div>.img_box img{width:190%; margin:-110px 0 0 -220px; transition: 0.5s;}
         #section3 .box{float:right; }
         #section3 .box div{width:240px; text-align:center; float:left;}
         #section3 .box div:nth-of-type(1){margin-top:50px;}
         #section3 .box div:nth-of-type(2){margin:200px 0 0 50px;}
-        #section3 .box img{width:240px; height:auto;}
-        #section3 .box img:hover{transform: rotate(10deg); transition: 0.5s;}
+        #section3 .box img{width:240px; height:auto; transition: 0.5s;}
+        #section3 .box img:hover{transform: rotate(10deg); }
         #section3 .box h4{padding:10px 0; letter-spacing: 1px;}
         #section3 .box p{padding-bottom:10px; font-size:12px;}
         #section3 .box span{width:40px; margin:0 auto; line-height:20px; display:block;
@@ -660,8 +668,9 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         .section4_inner>div{cursor:pointer; margin-bottom:30px;}
         .section4_inner .img_box{width:280px; height:420px;  overflow: hidden; }
         .section4_inner .img_box:hover{box-shadow:0 1px 10px #e7b7c2; 
-            border-top-left-radius:200px; border-top-right-radius:200px; transition: 0.5s;}
-        .section4_inner .img_box:hover img{transform: scale(1.17); transition: 0.5s;}
+            border-top-left-radius:200px; border-top-right-radius:200px; }
+        .section4_inner .img_box:hover img{transform: scale(1.17); }
+        .section4_inner .img_box img{transition: 0.5s; }
         .section4_inner>div:nth-of-type(1) img{width:130%; margin:40px 0 0 -17%;}
         .section4_inner>div:nth-of-type(2) img{width:120%; margin:70px 0 0 -11%;}
         .section4_inner>div:nth-of-type(3) img{width:115%; margin:60px 0 0 -7.5%;}
@@ -688,10 +697,10 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
         #section6 .section6_inner{width:1100px; height:500px; margin:0 auto;
             display:flex; flex-wrap: wrap; justify-content: space-around; align-items: center;}
         #section6 .section6_inner div{margin:0 10px;}
-        .section6_inner img{width:150px; height:150px;
+        .section6_inner img{width:150px; height:150px; transition: 0.5s;
         border-radius: 100%; box-shadow: 1px 1px 3px black;}
         .section6_inner img:hover{
-            transform: rotate(360deg) scale(1.2); box-shadow:none;  transition: 0.5s;}
+            transform: rotate(360deg) scale(1.2); box-shadow:none; }
         
         
         
@@ -725,28 +734,30 @@ h1 img:hover {transform: rotate(360deg); transition: 1.5s;}
 
 header{width:100%; height:65px; background:rgb(245, 86, 131);
      position:fixed; z-index:100; top:0; text-align:center;}
-header button{width:35px; height:30px; left:30px; top:18px; z-index:99;
+header .menu_btn{width:35px; height:30px; left:30px; top:18px; z-index:99;
 position:absolute; display:flex; flex-direction: column; justify-content: space-between;}
-header button p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
+header .menu_btn p{width:35px; height:4px; background:rgb(255, 255, 255); border-radius: 2.5px; }
 header h1{ height:100px; margin:0 auto;}
+header .login_btn {width:35px; height:30px; right:30px; top:18px; z-index:99;
+    position:absolute;}
 header h1 img{height:100px; margin:15px 0; }
 
 
 
 header .nav_box{width:100%; height:100%; background:none; display:none;
-position: fixed; left:0; top:0;  background-color:rgba(0, 0, 0, 0.3)}
-header nav{width:630px; height:110%; border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.3); 
-    position:fixed; left:-630px; top:-5%; z-index:90;
-    }
-
-
-
-header nav ul{position:absolute; left:400px; top:30%; }
-header nav li, header nav li a { font-size:22px; line-height:30px; text-align:left;margin-top:20px;
-    color:white; text-shadow: 0 1px 3px rgb(110, 110, 110); }
-header nav li a:hover{color:rgb(245, 86, 131); border-bottom:3px solid rgb(245, 86, 131);
-    text-shadow:none;} 
+    position: fixed; left:0; top:0;  background-color:rgba(0, 0, 0, 0.3)}
+    header nav{width:630px; height:110%; border-radius: 100%;
+        background-color:rgb(245, 86, 131) ;
+        position:fixed; left:-630px; top:-5%; z-index:90;
+        }
+    
+    
+    
+    header nav ul{position:absolute; left:350px; top:30%; }
+    header nav li, header nav li a { font-size:22px; line-height:30px; text-align:left;margin-top:20px;
+        color:white;  }
+    header nav li a:hover{color:#fff200; 
+        text-shadow:none;} 
 
 #wrap{width:100%; margin:65px auto 0 auto;}
 
@@ -817,12 +828,12 @@ display:flex; justify-content: space-between; align-items: center; flex-wrap: wr
 #section2 h3{color:#ffe200;} 
 .section2_inner{width:1000px; height:800px; margin:0 auto; position:relative;
     display:flex; flex-wrap: wrap;}
-.section2_inner .text{position:absolute; top: 15%;}    
+.section2_inner .text{position:absolute; top: 15%; z-index:90;}    
 .section2_inner .img_box{width:420px; height:570px; overflow: hidden; margin:110px auto 0 auto; background:#92ff96;
     border-top-left-radius:210px; border-top-right-radius:210px;
     cursor: pointer;}  
-.section2_inner .img_box:hover img{transform: scale(1.2); transition: 0.5s;}
-.section2_inner .img_box img{height:100%; margin: 0 0 0 -80%;}
+.section2_inner .img_box:hover img{transform: scale(1.2);}
+.section2_inner .img_box img{height:100%; margin: 0 0 0 -80%; transition: 0.5s;}
 .section2_inner>img{width:150px; height:150px; 
     position:absolute; right:5%; top:30%;
     animation:roll 3s linear infinite; 
@@ -874,14 +885,14 @@ display:flex; justify-content: space-between; align-items: center; flex-wrap: wr
 #section3>div>.img_box{width:500px; height:650px; overflow: hidden;
     float:left; 
     border-top-left-radius:260px; border-top-right-radius:260px;}
-#section3>div>.img_box:hover img{transform: scale(1.1); transition: 0.5s;}
-#section3>div>.img_box img{width:180%; margin:-110px 0 0 -220px; }
+#section3>div>.img_box:hover img{transform: scale(1.1);}
+#section3>div>.img_box img{width:180%; margin:-110px 0 0 -220px;  transition: 0.5s; }
 #section3 .box{float:left; margin:50px 0 0 100px; }
 #section3 .box div{width:240px; text-align:center; float:left;}
 #section3 .box div:nth-of-type(1){margin-top:50px;}
 #section3 .box div:nth-of-type(2){margin:200px 0 0 100px;}
-#section3 .box img{width:240px; height:auto;}
-#section3 .box img:hover{transform: rotate(10deg); transition: 0.5s;}
+#section3 .box img{width:240px; height:auto; transition: 0.5s;}
+#section3 .box img:hover{transform: rotate(10deg); }
 #section3 .box h4{padding:10px 0; letter-spacing: 1px;}
 #section3 .box p{padding-bottom:10px; font-size:12px;}
 #section3 .box span{width:40px; margin:0 auto; line-height:20px; display:block;
@@ -898,8 +909,9 @@ display:flex; justify-content: space-between; align-items: center; flex-wrap: wr
 .section4_inner>div{cursor:pointer;}
 .section4_inner .img_box{width:330px; height:450px; overflow: hidden; }
 .section4_inner .img_box:hover{box-shadow:0 1px 10px #e7b7c2; 
-    border-top-left-radius:200px; border-top-right-radius:200px; transition: 0.5s;}
-.section4_inner .img_box:hover img{transform: scale(1.17); transition: 0.5s;}
+    border-top-left-radius:200px; border-top-right-radius:200px; }
+.section4_inner .img_box:hover img{transform: scale(1.17);}
+.section4_inner .img_box img{transition: 0.5s;}
 .section4_inner>div:nth-of-type(1) img{width:130%; margin:40px 0 0 -17%;}
 .section4_inner>div:nth-of-type(2) img{width:120%; margin:70px 0 0 -11%;}
 .section4_inner>div:nth-of-type(3) img{width:115%; margin:60px 0 0 -7.5%;}
@@ -925,10 +937,10 @@ display:flex; justify-content: space-between; align-items: center; flex-wrap: wr
 #section6{width:100%; height:500px; background:#fdf3fb; }
 #section6 .section6_inner{width:1300px; height:500px; margin:0 auto;
     display:flex; justify-content: space-around; align-items: center;}
-.section6_inner img{width:150px; height:150px;
+.section6_inner img{width:150px; height:150px; transition: 0.5s;
 border-radius: 100%; box-shadow: 1px 1px 3px black;}
 .section6_inner img:hover{
-    transform: rotate(360deg) scale(1.2); box-shadow:none;  transition: 0.5s;}
+    transform: rotate(360deg) scale(1.2); box-shadow:none; }
 
 
 

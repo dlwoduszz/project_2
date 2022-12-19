@@ -1,7 +1,7 @@
 $(document).ready(function(){
         
     // 사이드네비게이션
-    $("header button").click(function(){
+    $("header .menu_btn").click(function(){
         if($("nav").css('left') == '-630px'){
             $("header .nav_box").fadeIn('0.5s')
             $("nav").css('left','-300px').css('transition','0.5s');
